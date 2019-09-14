@@ -1,9 +1,9 @@
 /** 
 * This file creates the main search page users see when they open the App
 * and it is where users start their searches.
-* author: Ruiyang Guo
-* version:1
-* 08/28/2019
+* @author: Ruiyang Guo
+* @version:1
+* @data: 08/28/2019
 */
 
 import React, { useState, useEffect } from 'react';

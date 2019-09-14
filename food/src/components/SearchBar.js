@@ -1,8 +1,8 @@
 /** 
 * This file creates a search bar where users can search with key words
-* author: Ruiyang Guo
-* version:1
-* 08/28/2019
+* @author: Ruiyang Guo
+* @version:1
+* @data: 08/28/2019
 */
 import React from 'react';
 import { View, TextInput, StyleSheet } from 'react-native';

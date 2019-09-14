@@ -1,3 +1,9 @@
+/**
+* This component shows resturant images & manages layout details
+* @version 1
+* @author[Ruiyang Guo]
+* @data: 09/08/2019
+*/
 import React from 'react';
 import {View, Image, Text, StyleSheet} from 'react-native';
 

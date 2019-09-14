@@ -1,8 +1,8 @@
 /**
 * This file manages out App
-* author: Ruiyang Guo
-* version: v2
-* update date: 09/12/2019
+* @author: Ruiyang Guo
+* @version: v2
+* @update date: 09/12/2019
 */
 import { createStackNavigator, createAppContainer} from 'react-navigation';
 import SearchScreen from './src/screens/SearchScreen';

@@ -1,8 +1,8 @@
 /**
 * This file shows search results to users
-* author: Ruiyang Guo
-* version: v2
-* data: 09/10/2019
+* @author: Ruiyang Guo
+* @version: v2
+* @data: 09/10/2019
 */
 
 import React, { useState, useEffect } from 'react';
