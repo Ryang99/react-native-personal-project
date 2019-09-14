@@ -18,7 +18,7 @@ const SearchScreen = () => {
 	const [searchApi, results,errorMessage] = useResults();
 
 	const filterResultsByPrice = price => {
-    // price === '$' || '$$' || '$$$'
+    // our price conditions: price === '$' || '$$' || '$$$'
     return results.filter(result => {
       return result.price === price;
     });
@@ -26,6 +26,7 @@ const SearchScreen = () => {
 	
 
 	return (
+    // empty element placeholder
     <>
       <SearchBar
         term={term}
@@ -38,11 +39,19 @@ const SearchScreen = () => {
         <ResultsList
           results={filterResultsByPrice('$')}
           title="Cost Effective"
+          // navigation prop
+          // navigation={navigation}
         />
-        <ResultsList results={filterResultsByPrice('$$')} title="Bit Pricier" />
+        <ResultsList 
+        	// navigation={navigation}
+        	results={filterResultsByPrice('$$')}
+        	title="Bit Pricier"
+          />
         <ResultsList
-          results={filterResultsByPrice('$$$')}
-          title="Big Spender"
+        	// navigation={navigation}
+         	results={filterResultsByPrice('$$$')}
+        	title="Big Spender"
+
         />
       </ScrollView>
     </>

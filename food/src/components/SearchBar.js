@@ -1,4 +1,5 @@
-/** This file creates a search bar where users can search with key words
+/** 
+* This file creates a search bar where users can search with key words
 * author: Ruiyang Guo
 * version:1
 * 08/28/2019

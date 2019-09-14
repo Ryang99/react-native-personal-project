@@ -1,4 +1,5 @@
-/** This file makes request to Yelp for our APP
+/** 
+* This file makes request to Yelp for our APP
 * author: Ruiyang Guo
 * version:1
 *08/28/2019
