@@ -1,8 +1,8 @@
 /**
 * This file makes search results in list.
-* author: Ruiyang Guo
-* version: v2
-* data: 09/03/2019
+* @author: Ruiyang Guo
+* @version: v2
+* @data: 09/03/2019
 */
 import React from 'react';
 import {View, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
@@ -22,13 +22,15 @@ const ResultsList = ({ title, results, navigation }) => {
           return (
             <TouchableOpacity
               onPress={() =>
-                navigation.navigate('ResultsShow', { id: item.id })
+                navigation.navigate('ResultsShow', { id: item.id }
+                )
               }
             >
               <ResultsDetail result={item} />
             </TouchableOpacity>
           );
-        }}
+        }
+      }
       />
     </View>
   );

@@ -6,7 +6,7 @@
 */
 
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, FlatList, Image } from 'react-native';
 
 const ResultsShowScreen = ({ navigation }) => {
 	// our state
@@ -25,6 +25,7 @@ const ResultsShowScreen = ({ navigation }) => {
     getResult(id);
   }, []);
 
+   // no result: show nothing
   if (!result) {
     return null;
   }
@@ -32,6 +33,7 @@ const ResultsShowScreen = ({ navigation }) => {
   return (
     <View>
       <Text>{result.name}</Text>
+       ///show a list with images for a resturant content
       <FlatList
         data={result.photos}
         keyExtractor={photo => photo}
@@ -43,11 +45,13 @@ const ResultsShowScreen = ({ navigation }) => {
   );
 };
 
-const styles = StyleSheet.create({
-  image: {
-    height: 200,
-    width: 300
+const styles = StyleSheet.create(
+  {
+    image: {
+      height: 200,
+      width: 300
+    }
   }
-});
+);
 
 export default ResultsShowScreen;

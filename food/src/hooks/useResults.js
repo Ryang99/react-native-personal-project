@@ -1,8 +1,8 @@
 /** 
 * This file is my own hook created for searching 
-* author: Ruiyang Guo
-* version:1
-* 09/02/2019
+* @author: Ruiyang Guo
+* @version:1
+* @data: 09/02/2019
 */
 import { useEffect, useState } from 'react';
 import yelp from '../api/yelp';
